@@ -8,7 +8,7 @@
 - **Backlog break từ:** bộ spec LAB-4 nộp ngày **2026-11-22** (SPEC-PA-001, SPEC-PA-101〜106, SPEC-PA-201〜205).
 - **PREMISE.md: có thay đổi** so với LAB-4: 12 thay đổi spec, 8 giả định bổ sung, 6 hướng đã chốt. Xem [PREMISE.md](PREMISE.md).
 - **Số epic:** 5 epic, 13 story, 104 task. Tổng **387 SWP / 970,5 giờ** ([estimate.md](estimate.md)).
-- **Sprint giả lập:** Sprint 4 (2027-01-11 → 2027-01-24), sprint phát triển đầu tiên gồm E-01 Master data. ⚠ *Chưa chạy giả lập; sẽ cập nhật cùng progress-report.md.*
+- **Sprint giả lập đã chạy:** Sprint 4 (2027-01-11 → 2027-01-24), sprint phát triển đầu tiên gồm 14 task của E-01 Master data. Hoàn thành 39/53 SWP; 14 SWP chuyển sang Sprint 5 ([progress-report.md](progress-report.md)).
 
 ## Link
 
@@ -28,7 +28,7 @@ Repo và Project đều public. ⚠ *Đã mở thử bằng cửa sổ ẩn danh
 | `PREMISE.md` | Backlog khác LAB-4 ở đâu: thay đổi spec, giả định bổ sung, hướng đã chốt |
 | `task-breakdown.md` | Nguyên tắc chia task, spec → issue, hạng mục 完納奨励金, chỗ hở của spec LAB-4 |
 | `estimate.md` | Issue mẫu skill chọn, cách quy ra giờ, tổng theo epic, so với estimate LAB-1 |
-| `progress-report.md` | Tiến độ Sprint 4 giả lập: trạng thái, burndown, rủi ro trễ (⚠ chưa có) |
+| `progress-report.md` | Tiến độ Sprint 4 giả lập: trạng thái, burndown, rủi ro trễ |
 | `AI-report.md` | Skill và prompt đã dùng, cách review output của AI, điểm đặc biệt |
 | `reports/` | Báo cáo HTML của skill `tkm:estimate-swp` (có payload kiểm toán nhúng bên trong) |
 | `project/01_management/` | Tài liệu quản lý dự án: overview, stakeholders, schedule (WBS), task-list (T-001〜T-104 ↔ Issue #1〜#104), define-dod, qa (câu hỏi khách) và `stories/` (13 story chi tiết mà body Issue trỏ tới) |
