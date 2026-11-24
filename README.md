@@ -19,7 +19,7 @@
 | Báo cáo HTML chấm SWP (trong repo) | [`reports/estimate-swp-product-a-lab5-20261123-135557.html`](reports/estimate-swp-product-a-lab5-20261123-135557.html) |
 | Báo cáo HTML (xem trực tiếp, GitHub Pages) | https://pattc-1538.github.io/Lab5-product-a/reports/estimate-swp-product-a-lab5-20261123-135557.html |
 
-Repo và Project đều public. ⚠ *Đã mở thử bằng cửa sổ ẩn danh: chưa kiểm tra.*
+Repo, Project và báo cáo HTML (GitHub Pages) đều public. **Đã mở thử bằng cửa sổ ẩn danh (không đăng nhập GitHub) ngày 2026-11-24: xem được cả ba.**
 
 ## Cấu trúc repo
 
