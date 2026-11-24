@@ -40,7 +40,7 @@ Trước khi tới bước duyệt, có một vòng sửa máy: worker gán nhó
 | #111 E-02 Receiving | 9 | 36 | 90,5 | Có thêm hủy lô (P3) |
 | #113 E-03 Sales | 17 | 68 | 170,5 | Gồm luồng ngoại lệ (#98〜#100) |
 | #116 E-04 Settlement & receivables | 25 | 103 | 259,5 | Gồm 完納奨励金 (27 SWP) và 請求書 (P12) |
-| #120 E-05 Inquiry & reporting | 12 | 40 | 100,0 | #86 có độ tin cậy low (phạm vi F-013 chờ QA-004) |
+| #120 E-05 Inquiry & reporting | 12 | 40 | 100,0 | #86 có độ tin cậy low (lúc chấm, phạm vi F-013 còn chờ khách; đã chốt ở QA-004 ngày 2026-11-24 nhưng chưa chấm lại) |
 | **Tổng** | **104** | **387** | **970,5** | Độ tin cậy: high 12, medium 82, low 10. Không có đề xuất tách Issue |
 
 ## 4. So với estimate LAB-1

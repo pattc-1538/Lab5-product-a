@@ -7,9 +7,9 @@
 
 | Role | Name | Affiliation | Contact | Authority |
 | --- | --- | --- | --- | --- |
-| Project owner | TBD (QA-001) | 卸売業者 (representative) | TBD | Final approval of scope/specification changes and of deliverable acceptance |
-| Point of contact | TBD (QA-001) | 卸売業者 office | TBD | Day-to-day contact, first review of deliverables, coordination of UAT |
-| Market rules owner | TBD (QA-001) | Market management office (開設者) | TBD | Provides and confirms the 業務規程 (permissions, fees, payment deadlines, 完納奨励金) |
+| Project owner | 佐藤 健一 (fictional) | 卸売業者, representative director | Slack | Final approval of scope/specification changes and of deliverable acceptance |
+| Point of contact | 鈴木 美咲 (fictional) | 卸売業者, operations section | Slack | Day-to-day contact, first review of deliverables, coordination of UAT |
+| Market rules owner | 高橋 誠 (fictional) | Market management office (開設者), operations chief | Slack | Provides and confirms the 業務規程 (permissions, fees, payment deadlines, 完納奨励金) |
 
 ## 2. Sun\* Organization
 
@@ -30,7 +30,7 @@
 | Subject | Proposed by | Reviewed by | Approved by | Notes |
 | --- | --- | --- | --- | --- |
 | Scope / specification change | Sun* PL/BrSE | Client point of contact + Sun* PM | Client project owner | Changes to the 業務規程 rules are also confirmed by the market rules owner |
-| Deliverable acceptance | Sun* PM | Client point of contact (5 business days) | Client project owner | Approval flow and review period to be confirmed (QA-002) |
+| Deliverable acceptance | Sun* PM | Client point of contact (5 business days) | Client project owner | Approval flow and 5-business-day review confirmed (QA-002) |
 
 ## 4. Escalation Flow
 
@@ -55,3 +55,4 @@
 | Date | Updated by | Content |
 | --- | --- | --- |
 | 2026-11-23 | pm-plan-project skill | Created: client organization roles, Sun* team (capacity from the v2 estimate, 177 MD), approval flow, escalation, channels |
+| 2026-11-24 | project-manager | Client organization filled from QA-001 (fictional names); approval flow and escalation confirmed (QA-002) |

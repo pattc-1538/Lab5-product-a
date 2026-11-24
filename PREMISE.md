@@ -27,21 +27,25 @@ Chi tiết từng thay đổi nằm trong story tương ứng ở [`project/01_m
 | A1 | Hạn thanh toán = ngày chốt + số ngày; rơi vào ngày nghỉ ngân hàng thì lùi sang ngày làm việc kế tiếp | Cách tính hạn thanh toán chưa có trong RFP lẫn LAB-4 | #70 (cần lịch ngày nghỉ Nhật); giá trị cụ thể hỏi khách |
 | A2 | 完納奨励金 xét theo từng kỳ chốt; tiền mua chưa thuế × tỷ lệ tháng; làm tròn xuống ở tổng tháng của từng người mua | Công thức thưởng (Q-07) | #77 (độ khó C3), #79; nếu khách dùng bậc thang thì +3〜5 MD (rủi ro estimate v2) |
 | A3 | 中値 = mức giá có khối lượng giao dịch lớn nhất | Định nghĩa giá công bố (F-013, QA-004) | #89 |
-| A4 | Hạng độ tươi là một danh sách chung cho cả chợ, khởi tạo A/B/C | Thang độ tươi thật (Q-05) | #20, #21; đổi thang chỉ là đổi dữ liệu |
+| A4 | Hạng độ tươi là một danh sách chung cho cả chợ, khởi tạo 特/A/B/C (khách chọn 4 bậc, QA-011) | Thang độ tươi thật (Q-05) | #20, #21; đổi thang chỉ là đổi dữ liệu |
 | A5 | Khoảng 10 lô/ngày, 10 giao dịch 相対/ngày, tối đa 10 người nhập cùng lúc; 20〜50 người mua cấp 1; khoảng 20 tài khoản | Khối lượng giao dịch chưa có trong RFP | Kích thước test và hiệu năng (#42, #49, #97) |
 | A6 | Tài khoản tạo bằng email mời, tự đặt lại mật khẩu qua email (Supabase Auth); mọi nhân viên có email công việc | Cách cấp tài khoản | #35, #36 |
 | A7 | Tham số 業務規程 có hiệu lực từ ngày mai; một 市場管理者 tự phát hành, không cần người duyệt thứ hai | Quy trình đổi quy tắc | #28〜#30, #92〜#95 |
 | A8 | CSV dùng UTF-8 có BOM; tra cứu tối đa 1 năm mỗi lần, 100 dòng/trang | Định dạng xuất | #83, #84 |
 
-Các giả định trên chỉ lấp chỗ RFP và LAB-4 để ngỏ. Những gì RFP đã nêu rõ (2 vai trò đăng nhập, kiểm quyền khi nhập giao dịch, せり chỉ ghi kết quả, 13 chức năng) giữ nguyên.
+Ngày 2026-11-24, khách (hư cấu, PL trả lời thay) đã **xác nhận cả 8 giả định** ở qa.md QA-005〜QA-014; riêng A4 khách chọn 4 bậc 特/A/B/C. Các giả định trên chỉ lấp chỗ RFP và LAB-4 để ngỏ. Những gì RFP đã nêu rõ (2 vai trò đăng nhập, kiểm quyền khi nhập giao dịch, せり chỉ ghi kết quả, 13 chức năng) giữ nguyên.
 
 ## 3. Hướng đã chốt
 
 | Vấn đề | Các phương án ở LAB-4 | Phương án chốt | Vì sao |
 | --- | --- | --- | --- |
-| Giao dịch sai quyền (R-07, Q-22) | Chặn cứng (code LAB-2) / ghi 承認待ち kèm lý do, 市場管理者 duyệt (ADR-005) | Ghi 承認待ち và duyệt; nếu khách trả lời Q-22 là "chặn tuyệt đối" thì bỏ phần này | Proposal điểm 03 đã hứa với khách; estimate v2 có dòng 5.1d (4 MD) |
+| Giao dịch sai quyền (R-07, Q-22) | Chặn cứng (code LAB-2) / ghi 承認待ち kèm lý do, 市場管理者 duyệt (ADR-005) | Ghi 承認待ち và duyệt (khách xác nhận QA-006, 2026-11-24) | Proposal điểm 03 đã hứa với khách; estimate v2 có dòng 5.1d (4 MD) |
 | Sửa giao dịch nhập sai | Sửa trực tiếp giá/số lượng (estimate 5.1b) / hủy kèm lý do rồi nhập lại (SPEC-PA-102, R-09) | Hủy kèm lý do rồi nhập lại | Giữ lịch sử rõ ràng cho 仕切 và công nợ |
-| Ảnh chụp ký hiệu viết tay | Có (estimate v1 dòng 4.1b) / không (SPEC-PA-101, proposal v2 mục ngoài phạm vi) | Không làm, ghi là ứng viên change request (QA-003) | Proposal gửi khách ghi rõ ngoài phạm vi |
+| Ảnh chụp ký hiệu viết tay | Có (estimate v1 dòng 4.1b) / không (SPEC-PA-101, proposal v2 mục ngoài phạm vi) | Không làm; khách xác nhận không cần (QA-003, 2026-11-24) | Proposal gửi khách ghi rõ ngoài phạm vi |
 | Tạo file PDF (仕切書, 請求書, bảng kê) | Server tạo PDF / trang in của trình duyệt | Trang in A4 của trình duyệt, người dùng lưu thành PDF | Vừa effort 6.1b (2 MD), phông tiếng Nhật hiển thị đúng |
 | Căn cứ estimate | v1 201 MD (schedule ban đầu) / v2 177 MD (proposal gửi khách) | v2 177 MD | Khớp với con số đã báo khách; schedule tính lại, các mốc giữ nguyên, phần dư thành buffer |
 | Ngày áp dụng tham số | Từ ngày mai (R-08, code LAB-2) / cho phép ngay hôm nay | Từ ngày mai | Tránh giao dịch trong cùng một ngày bị chia hai quy tắc |
+| Ngưng tư cách và ngưng giấy phép (Q-26) | Tách riêng (LAB-4) / gộp làm một | Tách riêng | Khách xác nhận (QA-009); giữ code của #6, #8 |
+| Cách tính phí ủy thác và làm tròn (Q-02, R-03 「仮」) | Giữ giá trị tạm / đổi cơ sở tính | Giữ: 5,5% trên tiền bán chưa thuế, thuế phí 10%, thuế hàng 8%, làm tròn xuống ở tổng | Khách xác nhận (QA-008); bỏ nhãn 「仮」 |
+| Hủy bản 予約, bỏ điều kiện cấp phép (SPEC-PA-105 §6) | Thêm chức năng / thay bằng phiên bản mới | Không thêm, thay bằng phiên bản có ngày sau | Khách xác nhận không cần (QA-013) |
+| Phạm vi F-013 | Bảng in và CSV / có trang web công khai | Bảng ngày và tháng cho mọi mặt hàng, in và CSV, 中値 = giá có khối lượng lớn nhất | Khách xác nhận (QA-004) |

@@ -18,13 +18,12 @@ Product A is a web-based operations system for Sakura Bay Fish Market JSC (ficti
 
 | # | Current problem | Impact |
 | --- | --- | --- |
-| 1 | Trades are managed manually by phone, fax and handwritten ledgers | *Hypothesis (needs client confirmation, QA-001):* the day's trades cannot be seen in real time, and transcription and settlement errors occur |
+| 1 | Trades are managed manually by phone, fax and handwritten ledgers | the day's trades cannot be seen in real time, and transcription and settlement errors occur |
 | 2 | The market has just issued its own operating rules (業務規程) under the 2020 revision of 卸売市場法, and generic "auction market" systems do not fit them | No tool enforces the market's own rules |
-| 3 | The two legal permission tiers among the four participant types (who may buy from whom, through which channel) are checked by people | *Hypothesis (needs client confirmation, QA-001):* trades that breach the 業務規程 can slip through |
-| 4 | *Hypothesis (needs client confirmation, QA-001):* 完納奨励金 is calculated by hand from payment records | *Hypothesis (needs client confirmation, QA-001):* labour-intensive and error-prone, leading to disputes with buyers |
+| 3 | The two legal permission tiers among the four participant types (who may buy from whom, through which channel) are checked by people | trades that breach the 業務規程 can slip through |
+| 4 | 完納奨励金 is calculated by hand from payment records | labour-intensive and error-prone, leading to disputes with buyers |
 
-> Rows 1–3 (problem column) are taken from the client brief. Everything marked *Hypothesis* is inferred from
-> general characteristics and must not be treated as confirmed before the client answers QA-001.
+> Rows 1–3 (problem column) are taken from the client brief. The inferred items were confirmed by the client in QA-001 (2026-11-24).
 
 ## 3. Objectives & Value Delivered
 
@@ -40,3 +39,4 @@ Product A is a web-based operations system for Sakura Bay Fish Market JSC (ficti
 | Date | Updated by | Content |
 | --- | --- | --- |
 | 2026-11-04 | pm-gather-requirements skill | Created §1–§3 from context.txt; §2 hypotheses pending QA-001 |
+| 2026-11-24 | project-manager | §2 hypotheses confirmed by the client (QA-001) |

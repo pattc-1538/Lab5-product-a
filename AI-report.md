@@ -14,7 +14,7 @@ Công cụ: Claude Code (model Opus) với bộ skill Takumi (`tkm:*`), chạy t
 | **Ghi SWP lên Project** | Script Python gọi GraphQL `updateProjectV2ItemFieldValue` | Skill chấm SWP chỉ đọc, nên bước ghi tách riêng. Script đọc payload đã validate trong báo cáo HTML, ghi SWP và giờ cho 122 mục, mỗi lệnh 10 mục; rồi đọc lại Project để đối chiếu tổng (387 SWP, 970,5 giờ) |
 | **Quy giờ** | Hỏi người chọn phương án, AI tính | Ba phương án: một hệ số chung từ v2 (khuyên dùng), hệ số theo phase, hoặc 4 giờ/SWP cố định. Người chọn hệ số chung; AI tính 984 ÷ 387 = 2,543 giờ/SWP |
 | **Báo cáo tiến độ** | Script Python gọi GraphQL và Claude Code viết báo cáo (không dùng `tkm:pm-report-project`, vì skill đó ghi `progress.md` theo mẫu khác với yêu cầu LAB-5) | Prompt: "giả lập sprint 4". AI đề xuất kịch bản: Sprint 1–3 xong đúng kế hoạch; 2 chỗ lệch có lý do từ các điểm chưa chốt của story (Q-26 làm #6 trễ; thiếu giá trị ngày chốt làm #93 bị chặn). Script đặt Status cho 69 mục trên Project; AI tính burndown theo SWP từ ngày hoàn thành của từng task và viết bảng rủi ro dựa trên §10 của các story |
-| Kế hoạch, DoD, câu hỏi khách | `tkm:pm-plan-project`, `tkm:pm-define-dod` | Tạo overview, stakeholders, qa.md (4 câu hỏi khách, tiếng Nhật), define-dod (13 tiêu chí), gắn D-ID vào 13 story |
+| Kế hoạch, DoD, câu hỏi khách | `tkm:pm-plan-project`, `tkm:pm-define-dod` | Tạo overview, stakeholders, qa.md (câu hỏi khách bằng tiếng Nhật), define-dod (13 tiêu chí), gắn D-ID vào 13 story. Khách là hư cấu, nên PL đóng vai khách trả lời 14 câu QA: AI đề xuất câu trả lời (theo thiết kế hiện tại, ít phát sinh nhất), PL chọn hoặc sửa (ví dụ chọn 4 bậc độ tươi 特/A/B/C) |
 
 ## 2. Review output của AI
 
@@ -33,6 +33,7 @@ Công cụ: Claude Code (model Opus) với bộ skill Takumi (`tkm:*`), chạy t
 | 7 | Iteration đầu tiên bắt đầu thứ Ba (2026-12-01), nên Sprint 4 lệch một ngày so với ngày bắt đầu phát triển (thứ Hai 2027-01-11) | AI tự kiểm ngày sau khi tạo trường | Xóa và tạo lại trường Iteration bắt đầu thứ Hai 2026-11-30 |
 | 8 | Transfer Issue từ repo private sang repo public bị GitHub chặn | Lỗi API ngay ở Issue đầu tiên | Người chọn cách tạo bản sao ở repo Lab5 và đóng Issue cũ kèm link; chưa có gì bị thay đổi trước đó |
 | 9 | AI dùng một hệ số chung để quy giờ, khiến task tài liệu thiết kế gần bằng task code (thiết kế 39,1 MD so với 22 MD ở LAB-1) | So từng phần với LAB-1 khi viết estimate.md | Ghi rõ trong estimate.md §4; đề xuất cải thiện ở phần 3 |
+| 10 | Kịch bản giả lập Sprint 4 lúc đầu lấy câu hỏi "chưa được khách trả lời" (Q-26, giá trị ngày chốt) làm lý do trễ. Sau khi PL trả lời toàn bộ QA ngày 2026-11-24, tức trước sprint, kịch bản bị mâu thuẫn thời gian | AI tự đối chiếu ngày trả lời QA với ngày của sprint | Đổi lý do trễ thành nguyên nhân kỹ thuật và năng lực (review phát hiện thiếu kiểm tra trạng thái; BE hết giờ); thay các rủi ro liên quan |
 
 ## 3. Điểm đặc biệt trong cách dùng AI
 

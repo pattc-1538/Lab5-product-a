@@ -73,8 +73,8 @@ about 11 BE days against a 9-day window: project setup and environments (estimat
 last days of the requirements phase, as they do not depend on the requirements.
 Sun* days exclude 2026-12-29…2027-01-03, 2027-02-04…2027-02-12, 2027-04-30 and 2027-05-01; UAT (client)
 excludes the Japanese holidays 2027-04-29 and 2027-05-03…05-05; the release day is a working day in both
-countries. Hùng Kings' Day 2027 (around 2027-04-16) is not yet excluded and must be confirmed. F-013 scope is
-still pending customer confirmation. Additions found while writing the story details and absorbed by the buffer
+countries. Hùng Kings' Day 2027 (around 2027-04-16) is not yet excluded and must be confirmed. F-013 scope was
+confirmed by the client on 2026-11-24 (qa.md QA-004). Additions found while writing the story details and absorbed by the buffer
 (checked on 2026-11-23, story dates unchanged): invoices in E-04-S02 (about 0.5 day) and past-lot inquiry
 in E-05-S01 (about 0.5 day), 1 working day in total against the 15-day buffer.
 
@@ -86,3 +86,4 @@ in E-05-S01 (about 0.5 day), 1 working day in total against the 15-day buffer.
 | 2026-11-23 | pm-plan-schedule skill | Re-planned: E-01-S01 2→5 days and E-01-S04 7→9 days (scope added in story details); development end and later phases shifted by 5 working days; M-04 2027-04-07, M-05 2027-04-19, M-06 2027-05-14, M-07 2027-05-17 (moved out of Golden Week); Vietnamese 04-30/05-01 and Japanese GW holidays excluded |
 | 2026-11-23 | pm-plan-schedule skill | Re-based on the v2 estimate (177 MD) shown to the client: development stories now take 40 working days (was 56) and end on 2027-03-16; the remaining 15 working days to M-04 are buffer, so M-04…M-07 are unchanged. E-01-S04 6 days, E-03-S01 8 days (incl. exception flow 5.1d), E-02-S01 4 days without photos. Project setup (2.2) starts at the end of the requirements phase |
 | 2026-11-23 | pm-plan-schedule skill | Buffer check: about 1 working day of additions from the story details (E-04-S02 invoices, E-05-S01 past-lot inquiry) is absorbed by the 15-day buffer; dates and milestones unchanged |
+| 2026-11-24 | pm-plan-schedule skill | Note updated: F-013 scope confirmed (QA-004); no date change |

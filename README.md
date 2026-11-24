@@ -41,10 +41,10 @@ Repo và Project đều public. ⚠ *Đã mở thử bằng cửa sổ ẩn danh
 | SPEC-PA-104 `participant-licensing/…/PA_PARTICIPANT_LICENSE_SPEC.md`, SPEC-PA-203 | #105 — [Epic] E-01 Master data | Thủ tục 許可 (có xét duyệt) và 承認 (không xét duyệt) cho người tham gia |
 | SPEC-PA-105 `business-rules/…/PA_BUSINESS_RULE_PARAMS_SPEC.md`, SPEC-PA-204; PREMISE P1, P2 | #105 — [Epic] E-01 Master data | Tham số có ngày hiệu lực; thêm tab hạn thanh toán và tỷ lệ 完納奨励金 |
 | PREMISE P4, P11 (F-002, F-003, F-005, chưa có spec) | #105 — [Epic] E-01 Master data | Danh mục người gửi hàng, mặt hàng và hạng độ tươi, tài khoản |
-| SPEC-PA-101 `receiving/…/PA_LOT_LISTING_SPEC.md`; PREMISE P3〜P7 | #111 — [Epic] E-02 Receiving | Hủy lô, số lô theo ngày chợ; ảnh ký hiệu viết tay ngoài phạm vi |
-| SPEC-PA-102, SPEC-PA-103, SPEC-PA-201, SPEC-PA-202 `sales-trading/` | #113 — [Epic] E-03 Sales | Kiểm quyền dùng chung theo ngày giao dịch; luồng ngoại lệ chờ duyệt (chờ khách trả lời Q-22) |
+| SPEC-PA-101 `receiving/…/PA_LOT_LISTING_SPEC.md`; PREMISE P3〜P7 | #111 — [Epic] E-02 Receiving | Hủy lô, số lô theo ngày chợ; ảnh ký hiệu viết tay ngoài phạm vi (QA-003) |
+| SPEC-PA-102, SPEC-PA-103, SPEC-PA-201, SPEC-PA-202 `sales-trading/` | #113 — [Epic] E-03 Sales | Kiểm quyền dùng chung theo ngày giao dịch; luồng ngoại lệ chờ duyệt (khách xác nhận QA-006) |
 | PREMISE P11 (F-008, chưa có spec) | #113 — [Epic] E-03 Sales | せり chỉ ghi kết quả, dùng chung kiểm quyền với 相対 |
 | SPEC-PA-106 `shipper-settlement/…/PA_SHIKIRI_SETTLEMENT_SPEC.md`, SPEC-PA-205; PREMISE P8〜P10 | #116 — [Epic] E-04 Settlement & receivables | Hủy 仕切 (API-STL-03) đưa vào phạm vi |
 | PREMISE P11, P12 (F-010, F-011, chưa có spec) | #116 — [Epic] E-04 Settlement & receivables | **Ràng buộc đặc thù 完納奨励金** (story #119); 請求書 theo kỳ chốt |
-| PREMISE P11 (F-012, F-013, chưa có spec) | #120 — [Epic] E-05 Inquiry & reporting | Phạm vi công khai kết quả giao dịch chờ khách (QA-004) |
+| PREMISE P11 (F-012, F-013, chưa có spec) | #120 — [Epic] E-05 Inquiry & reporting | Phạm vi công khai kết quả giao dịch đã chốt (QA-004) |
 | SPEC-PA-001 `_common/PA_MARKET_OPS_DESIGN.md` | — (phase basic design) | Phần nền (khởi tạo dự án, đăng nhập + RLS, audit log) chưa có issue; xem task-breakdown.md §2 |
