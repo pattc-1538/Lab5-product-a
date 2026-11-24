@@ -67,17 +67,17 @@
 | --- | --- | --- |
 | SPEC-PA-105 | Không có tab hạn thanh toán và tỷ lệ 完納奨励金, trong khi F-004, WBS và estimate 3.4a có | Đã sửa thiết kế (PREMISE P1) |
 | SPEC-PA-105 | 変更理由 chỉ bắt buộc ở một tab | Đã sửa thiết kế (PREMISE P2) |
-| SPEC-PA-105 §6 | Chưa hỗ trợ hủy bản 予約 và bỏ hẳn điều kiện cấp phép | Giả định đã được khách xác nhận: không cần (PREMISE §3, QA-013) |
+| SPEC-PA-105 §6 | Chưa hỗ trợ hủy bản 予約 và bỏ hẳn điều kiện cấp phép | Giả định (PREMISE §3, dòng "Hủy bản 予約, bỏ điều kiện cấp phép"); khách xác nhận không cần ở QA-013 |
 | SPEC-PA-101 §6 | Không có cách xử lý lô nhập sai | Đã sửa thiết kế (PREMISE P3) |
 | SPEC-PA-101 | Hạng độ tươi cố định A/B/C, trong khi F-003 nói danh mục mặt hàng quản lý hạng độ tươi | Đã sửa thiết kế (PREMISE P4) và giả định (A4) |
 | SPEC-PA-101 | Số lô 4 chữ số đánh liên tục sẽ hết số | Đã sửa thiết kế (PREMISE P5) |
-| SPEC-PA-101 và estimate v1 4.1b | Spec không có ảnh, estimate v1 có, proposal v2 ghi ngoài phạm vi | Hướng đã chốt (PREMISE §3): không làm; khách xác nhận ở QA-003 |
+| SPEC-PA-101 và estimate v1 4.1b | Spec không có ảnh, estimate v1 có, proposal v2 ghi ngoài phạm vi | Đã sửa thiết kế (PREMISE §3, dòng "Ảnh chụp ký hiệu viết tay"): không làm; khách xác nhận ở QA-003 |
 | SPEC-PA-101, SPEC-PA-102 | Ngày chợ / ngày giao dịch cho nhập ngày bất kỳ | Đã sửa thiết kế (PREMISE P6) |
-| SPEC-PA-103 / R-07 | Luồng ngoại lệ phụ thuộc Q-22 | Hướng đã chốt (PREMISE §3); khách xác nhận ở QA-006 |
+| SPEC-PA-103 / R-07 | Luồng ngoại lệ phụ thuộc Q-22 | Đã sửa thiết kế (PREMISE §3, dòng "Giao dịch sai quyền"): ghi 承認待ち và duyệt; khách xác nhận ở QA-006 |
 | SPEC-PA-106 | API-STL-03 (hủy 仕切) được nhắc nhưng không có tài liệu | Đã sửa thiết kế (PREMISE P8); viết ở #61, làm ở #101 |
 | SPEC-PA-106 D-3 | Giao dịch được duyệt sau khi đã 仕切 vào kỳ nào: "chưa quyết" | Đã sửa thiết kế (PREMISE P9) |
-| market-rule-catalog | せり, công nợ, 完納奨励金 chưa có màn hình hay quy tắc | Tạo issue làm rõ: #53, #67, #74 (viết spec màn hình); giả định A1, A2 |
-| market-rule-catalog R-03 | Cách tính phí ủy thác và làm tròn đang để tạm (Q-02) | Hướng đã chốt (PREMISE §3): giữ giá trị tạm làm chính thức (QA-008) |
-| SPEC-PA-104 / Q-26 | Ngưng tư cách người tham gia và ngưng giấy phép có gộp làm một không | Hướng đã chốt (PREMISE §3): tách riêng (QA-009) |
-| function-list F-013 | Phạm vi công khai và báo cáo chưa rõ | Hướng đã chốt (PREMISE §3): đã chốt ở QA-004 |
-| Estimate v1 và schedule | Luồng ngoại lệ (v2 dòng 5.1d) không có trong bản v1 mà schedule dùng | Đã sửa (PREMISE §3: tính lại schedule theo v2) |
+| market-rule-catalog | せり, công nợ, 完納奨励金 chưa có màn hình hay quy tắc | Tạo issue làm rõ #53, #67, #74 (viết spec màn hình); quy tắc là giả định (PREMISE A1, A2) |
+| market-rule-catalog R-03 | Cách tính phí ủy thác và làm tròn đang để tạm (Q-02) | Giả định (PREMISE §3, dòng "Cách tính phí ủy thác và làm tròn"): giữ giá trị tạm; khách xác nhận ở QA-008 |
+| SPEC-PA-104 / Q-26 | Ngưng tư cách người tham gia và ngưng giấy phép có gộp làm một không | Giả định (PREMISE §3, dòng "Ngưng tư cách và ngưng giấy phép"): tách riêng; khách xác nhận ở QA-009 |
+| function-list F-013 | Phạm vi công khai và báo cáo chưa rõ | Giả định (PREMISE §3, dòng "Phạm vi F-013"); khách xác nhận ở QA-004 |
+| Estimate v1 và schedule | Luồng ngoại lệ (v2 dòng 5.1d) không có trong bản v1 mà schedule dùng | Đã sửa thiết kế (PREMISE §3, dòng "Căn cứ estimate"): tính lại schedule theo v2 |
