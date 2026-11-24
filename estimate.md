@@ -1,6 +1,6 @@
 # Estimate — Product A (SWP)
 
-**Báo cáo HTML của skill:** [`reports/estimate-swp-product-a-lab5-20261123-135557.html`](reports/estimate-swp-product-a-lab5-20261123-135557.html)
+**Báo cáo HTML của skill:** [`reports/estimate-swp-product-a-lab5-20261123-135557.html`](reports/estimate-swp-product-a-lab5-20261123-135557.html) · xem trực tiếp: https://pattc-1538.github.io/Lab5-product-a/reports/estimate-swp-product-a-lab5-20261123-135557.html
 (skill `tkm:estimate-swp`, mức xử lý `medium`, 104 task, hiệu chỉnh `accepted`, tạo lúc 2026-11-23 13:55 UTC).
 
 Mọi con số dưới đây lấy từ payload kiểm toán nhúng trong báo cáo và từ các trường SWP, Estimate (h) trên [GitHub Project](https://github.com/users/pattc-1538/projects/1).

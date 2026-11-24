@@ -16,7 +16,8 @@
 | --- | --- |
 | Repo | https://github.com/pattc-1538/Lab5-product-a |
 | GitHub Project | https://github.com/users/pattc-1538/projects/1 |
-| Báo cáo HTML chấm SWP | [`reports/estimate-swp-product-a-lab5-20261123-135557.html`](reports/estimate-swp-product-a-lab5-20261123-135557.html) |
+| Báo cáo HTML chấm SWP (trong repo) | [`reports/estimate-swp-product-a-lab5-20261123-135557.html`](reports/estimate-swp-product-a-lab5-20261123-135557.html) |
+| Báo cáo HTML (xem trực tiếp, GitHub Pages) | https://pattc-1538.github.io/Lab5-product-a/reports/estimate-swp-product-a-lab5-20261123-135557.html |
 
 Repo và Project đều public. ⚠ *Đã mở thử bằng cửa sổ ẩn danh: chưa kiểm tra.*
 
@@ -31,6 +32,7 @@ Repo và Project đều public. ⚠ *Đã mở thử bằng cửa sổ ẩn danh
 | `progress-report.md` | Tiến độ Sprint 4 giả lập: trạng thái, burndown, rủi ro trễ |
 | `AI-report.md` | Skill và prompt đã dùng, cách review output của AI, điểm đặc biệt |
 | `reports/` | Báo cáo HTML của skill `tkm:estimate-swp` (có payload kiểm toán nhúng bên trong) |
+| `.nojekyll` | Để GitHub Pages phục vụ file HTML nguyên trạng, không qua Jekyll |
 | `project/01_management/` | Tài liệu quản lý dự án: overview, stakeholders, schedule (WBS), task-list (T-001〜T-104 ↔ Issue #1〜#104), define-dod, qa (câu hỏi khách) và `stories/` (13 story chi tiết mà body Issue trỏ tới) |
 | `project/02_requirements/` | Yêu cầu: function-list, non-function-list, role-list, glossary, system-overview, qa |
 
