@@ -34,6 +34,7 @@ Công cụ: Claude Code (model Opus) với bộ skill Takumi (`tkm:*`), chạy t
 | 8 | Transfer Issue từ repo private sang repo public bị GitHub chặn | Lỗi API ngay ở Issue đầu tiên | Người chọn cách tạo bản sao ở repo Lab5 và đóng Issue cũ kèm link; chưa có gì bị thay đổi trước đó |
 | 9 | AI dùng một hệ số chung để quy giờ, khiến task tài liệu thiết kế gần bằng task code (thiết kế 39,1 MD so với 22 MD ở LAB-1) | So từng phần với LAB-1 khi viết estimate.md | Ghi rõ trong estimate.md §4; đề xuất cải thiện ở phần 3 |
 | 10 | Kịch bản giả lập Sprint 4 lúc đầu lấy câu hỏi "chưa được khách trả lời" (Q-26, giá trị ngày chốt) làm lý do trễ. Sau khi PL trả lời toàn bộ QA ngày 2026-11-24, tức trước sprint, kịch bản bị mâu thuẫn thời gian | AI tự đối chiếu ngày trả lời QA với ngày của sprint | Đổi lý do trễ thành nguyên nhân kỹ thuật và năng lực (review phát hiện thiếu kiểm tra trạng thái; BE hết giờ); thay các rủi ro liên quan |
+| 11 | AI ghi buffer phát triển là 15 ngày làm việc (03-17 → 04-07), thực tế là 16 | Đếm lại bằng script khi xử lý ngày Giỗ Tổ (16/04/2027) | Ghi lại trong schedule.md; sau khi dùng 1 ngày buffer cho Giỗ Tổ (M-04 thành 04-06), buffer còn đúng 15 ngày |
 
 ## 3. Điểm đặc biệt trong cách dùng AI
 

@@ -57,8 +57,8 @@ xychart-beta
 
 | Rủi ro | Issue | Ảnh hưởng tới mốc nào | Hành động | Ai làm, khi nào |
 | --- | --- | --- | --- | --- |
-| #93 (tham số hạn thanh toán và tỷ lệ 奨励金) chưa làm, mà E-04 cần nó | #93, #95; sau đó #70, #77, #103 (E-04, Sprint 7–8) | M-04 Development complete (2027-04-07) | Đưa #93 lên việc đầu tiên của BE ở Sprint 5; #95 làm ngay sau | BE, ngày 01-25 (đầu Sprint 5) |
-| 14 SWP (~35 giờ) chuyển sang Sprint 5, cộng với 6 task đã lên kế hoạch (E-01-S05, E-02-S01) | #92〜#95; #35, #36, #42, #43, #96, #97 | M-04: dùng buffer 15 ngày (03-17 → 04-07) | Đưa #92, #94 lên đầu Sprint 5; nếu Sprint 5 quá tải thì dời #96, #97 (hủy lô) sang Sprint 6 | PM (TBD), lúc lập kế hoạch Sprint 5 ngày 01-25 |
+| #93 (tham số hạn thanh toán và tỷ lệ 奨励金) chưa làm, mà E-04 cần nó | #93, #95; sau đó #70, #77, #103 (E-04, Sprint 7–8) | M-04 Development complete (2027-04-06) | Đưa #93 lên việc đầu tiên của BE ở Sprint 5; #95 làm ngay sau | BE, ngày 01-25 (đầu Sprint 5) |
+| 14 SWP (~35 giờ) chuyển sang Sprint 5, cộng với 6 task đã lên kế hoạch (E-01-S05, E-02-S01) | #92〜#95; #35, #36, #42, #43, #96, #97 | M-04: dùng buffer 15 ngày (03-17 → 04-06) | Đưa #92, #94 lên đầu Sprint 5; nếu Sprint 5 quá tải thì dời #96, #97 (hủy lô) sang Sprint 6 | PM (TBD), lúc lập kế hoạch Sprint 5 ngày 01-25 |
 | Kiểm tra chuyển trạng thái giấy phép có thể còn thiếu trường hợp, và chỉ lộ ra ở ST (Sprint 10) | #6, #8 (đã Done); #9 ST | M-05 System test complete (2027-04-19) | QA viết sớm test case chuyển trạng thái theo 17 tiêu chí của E-01-S01 và chạy thử ở Sprint 5 | QA, trước 02-05 |
 | Chưa chọn nguồn lịch ngày nghỉ Nhật cho hạn thanh toán (lùi sang ngày làm việc kế tiếp, QA-005) | #70 (E-04-S02, Sprint 7) | M-04 | Chọn nguồn dữ liệu ngày nghỉ (bảng công bố của Văn phòng Nội các Nhật) và cách cập nhật hằng năm; ghi vào thiết kế DB #69 | BE, trước khi Sprint 7 bắt đầu (02-22) |
 | FE phải chờ BE trong cùng story | #94 (Sprint 5); các cặp BE/FE ở Sprint 5–8 | Năng suất sprint, chưa ảnh hưởng mốc | Ở Sprint 5, BE bắt đầu trước FE nửa ngày; FE làm trước phần giao diện với dữ liệu giả lập theo spec API | BE, FE, từ Sprint 5 |
